@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 via-gray-500/10 to-transparent pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo (Left) */}
-        <div className="flex-shrink-0 pt-3">
+        <div className="flex-shrink-0">
           <a
             href="/"
             onClick={() => {

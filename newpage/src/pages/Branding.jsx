@@ -42,7 +42,7 @@ export default function Branding() {
 
         {/* SECTION TITLE */}
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-center mb-4"
+          className="text-3xl md:text-5xl font-bold text-center mb-4"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
@@ -50,14 +50,14 @@ export default function Branding() {
           How We Build Your Brand
         </motion.h2>
 
-        <motion.p
+        {/* <motion.p
           className="max-w-2xl mx-auto text-gray-600 mb-12 text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
         >
           A strategic, creative, and seamless process designed to make your brand unforgettable.
-        </motion.p>
+        </motion.p> */}
 
         {/* TIMELINE STEPS */}
         <div className="relative max-w-4xl mx-auto mb-24">
@@ -177,18 +177,11 @@ export default function Branding() {
           >
             {/* Accent Hover Glow */}
             <div className="absolute inset-0 bg-orange-150 opacity-0 hover:opacity-80 transition-all duration-300 pointer-events-none"></div>
-            
-            {/* Image Circle */}
-              <div className="
-                w-25 h-25 rounded-full bg-orange-500 
-                flex items-center justify-center shadow-lg mb-6 overflow-hidden relative z-10
-              ">
                 <img
                   src={item.img}
                   alt={item.title}
                   className="w-20 h-20 object-contain"
                 />
-              </div>
             {/* Title */}
             <h3 className="text-2xl font-semibold text-orange-500 mb-3 relative z-10">
               {item.title}

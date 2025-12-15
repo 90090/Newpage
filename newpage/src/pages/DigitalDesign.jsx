@@ -10,12 +10,12 @@ export default function Marketing() {
     },
     {
       title: "Logo Design",
-      text: "If you’re a new business, haven’t tried creating a logo, or want a revamp — we can create a seamless logo that can be utilized seamlessly across media.",
+      text: "If you’re a new business, haven’t tried creating a logo, or want a revamp — we can create a logo that can be utilized seamlessly across media.",
       icon: "/icons/logo.png",
     },
     {
       title: "Advertisements",
-      text: "If interested, you can work with our team to develop multi use graphics that can be utilized for advertisements. We can host your ads through google ads to generate traffic to your business.",
+      text: "If interested, you can work with our team to develop multi use graphics that can be utilized for advertisements. We can thne host them through google ads to generate traffic to your business.",
       icon: "/icons/ads.png",
     },
     {
@@ -25,7 +25,7 @@ export default function Marketing() {
     },
     {
       title: "Website Design",
-      text: "Your website doesn’t have to be built statically, brick by brick, blocky as all hell. We bring in alluring curves and shapes to break up the blocky monotonous of the digital landscape. We generate cutting edge ideas to give you and your customers a user experience unlike any other.",
+      text: "Your website doesn’t have to be built statically. We bring in alluring curves and shapes to break up the monotony, by generating cutting edge ideas to give you and your customers a user experience unlike any other.",
       icon: "/icons/web.png",
     },
   ];
@@ -34,7 +34,7 @@ export default function Marketing() {
     <main className="relative bg-gradient-to-br from-orange-200 via-white to-orange-300 overflow-hidden">
       <section className="px-6 md:px-12 py-24 max-w-5xl mx-auto">
         <motion.h1
-          className="text-4xl md:text-5xl font-bold text-center text-orange-500 mb-8"
+          className="text-5xl md:text-6xl font-bold text-center text-orange-500 mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >

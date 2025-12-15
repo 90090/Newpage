@@ -40,7 +40,7 @@ export default function Contact() {
           className="text-center space-y-2"
         >
           <p className="text-sm text-gray-600">
-            You'll hear back from us within 24 hours. Let's make it happen.
+            You'll hear back from us within 48 hours. Let's make it happen.
           </p>
         </motion.div>
       </section>

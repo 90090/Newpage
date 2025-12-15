@@ -163,11 +163,11 @@ function Home() {
         </div>
 
         <h2 className="text-3xl md:text-4xl font-bold mb-3">What We Offer</h2>
-        <p className="max-w-2xl mx-auto text-base md:text-lg leading-relaxed text-gray-200">
+        {/* <p className="max-w-2xl mx-auto text-base md:text-lg leading-relaxed text-gray-200">
           From responsive websites to strong branding and marketing —{" "}
           <span className="text-orange-400 font-semibold">Newpage</span> delivers
           complete digital solutions designed to grow your business.
-        </p>
+        </p> */}
       </div>
         <FeaturesSection featureData={featureData} />
       </section>

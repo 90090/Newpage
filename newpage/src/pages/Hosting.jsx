@@ -10,7 +10,7 @@ export default function Hosting() {
     {
       title: "Cloud Hosting",
       icon: <Cloud className="w-12 h-12 text-white" />,
-      desc: "Modern, scalable cloud infrastructure optimized for speed and uptime. Powered by next-gen data centers and managed entirely for you.",
+      desc: "Modern, scalable cloud infrastructure optimized for speed and uptime. Powered by next-gen data centers and managed entirely for us.",
       visual: (
         <motion.div
           className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-full blur-3xl opacity-40"
@@ -36,7 +36,7 @@ export default function Hosting() {
     {
       title: "Seamless Integration",
       icon: <Plug className="w-12 h-12 text-white" />,
-      desc: "Integrated with your website stack, analytics, and CMS tools. We ensure everything just works together smoothly.",
+      desc: "Integrated with your website stack, analytics, and CMS tools. We ensure everything works together smoothly.",
       visual: (
         <motion.div
           className="absolute -inset-2 rounded-full bg-gradient-to-br from-yellow-400 via-orange-500 to-red-500 opacity-30 blur-2xl"
@@ -82,7 +82,7 @@ export default function Hosting() {
       />
 
       {/* HERO */}
-      <section className="text-center py-24 px-6 relative z-10">
+      <section className="text-center py-10 px-6 relative z-10">
         <motion.h1
           className="text-5xl md:text-6xl font-extrabold text-orange-500 mb-6"
           initial={{ opacity: 0, y: 40 }}
@@ -112,7 +112,7 @@ export default function Hosting() {
 
       
         {/* CLOUD DISPLAY */}
-        <section className="relative flex flex-col items-center justify-center py-10 md:py-107 overflow-hidden">
+        <section className="relative flex flex-col items-center justify-center py-10 md:py-100 overflow-hidden">
           {/* Center Icon */}
           <motion.div className="relative z-20 mb-10 md:mb-0">
             <motion.img
@@ -223,7 +223,7 @@ export default function Hosting() {
         </section>
       {/* FINAL CTA */}
       <motion.section
-        className="bg-orange-500 text-white text-center py-20 "
+        className="bg-orange-500 text-white text-center py-10"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6 }}

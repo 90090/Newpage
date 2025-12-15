@@ -65,7 +65,7 @@ export default function WebDevelopment() {
       </section>
 
       {/* Curved Background + Feature Section */}
-      <section className="relative z-10 py-32 px-6 md:px-12">
+      <section className="relative z-10 py-10 px-6 md:px-12">
         {/* Curved background shape */}
         <motion.div
           className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1200px] h-[600px] bg-gradient-to-tr from-orange-200 to-orange-300 rounded-t-full opacity-40 -z-10"

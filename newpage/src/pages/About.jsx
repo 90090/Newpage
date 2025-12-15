@@ -39,10 +39,9 @@ export default function About() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          We are two recent college graduates who want to use our skills to expand Connecticut’s business’ digital landscape. 
-          With most business being conducted online nowadays, our goal is to help{" "}
-          <span className="font-semibold">YOU</span> establish a trusted brand on the web. We value the ability for any type of 
-          business to have a digital presence in order to effectively reach all potential customers. Allow us to use our expertise in web design, hosting, 
+          We are two recent college graduates who want to help{" "}
+          <span className="font-semibold">YOU</span> establish a trusted brand on the web.  Any type of 
+          business needs to have a digital presence in order to effectively reach all potential customers. Allow us to use our expertise in web design, hosting, 
           SEO, and marketing to help cement your place in the digital marketplace.
         </motion.p>
       </section>
