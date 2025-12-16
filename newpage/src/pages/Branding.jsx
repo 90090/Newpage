@@ -164,12 +164,14 @@ export default function Branding() {
         ].map((item, i) => (
           <motion.div
             key={i}
-            className="
+            className={`
               relative p-8 rounded-2xl bg-white border border-orange-200 
               shadow-md hover:shadow-xl hover:scale-[1.02]
               transition-all duration-300 flex flex-col items-center text-center
               overflow-hidden
-            "
+              aspect-square max-w-sm mx-auto
+              ${i === 4 ? "md:col-span-2" : ""}
+            `}
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },
@@ -197,6 +199,24 @@ export default function Branding() {
           </motion.div>
         ))}
       </motion.div>
+      {/* CTA SECTION */}
+      <motion.section
+        className="mt-24 text-center"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="pt-8 text-3xl font-bold mb-4 text-orange-500">
+            Want to Improve Your Branding Today?
+          </h2>
+          <a
+            href="/contact"
+            className="inline-block px-8 py-4 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition duration-300 shadow-md hover:shadow-lg"
+          >
+            Let's Create Amazing Branding  →
+          </a>
+        </motion.section>
       </section>
     </main>
   );

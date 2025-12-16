@@ -32,9 +32,9 @@ export default function Marketing() {
 
   return (
     <main className="relative bg-gradient-to-br from-orange-200 via-white to-orange-300 overflow-hidden">
-      <section className="px-6 md:px-12 py-24 max-w-5xl mx-auto">
+      <section className="px-6 md:px-12 py-24 max-w-5xl mx-auto text-center">
         <motion.h1
-          className="text-5xl md:text-6xl font-bold text-center text-orange-500 mb-8"
+          className="text-5xl md:text-6xl font-bold text-orange-500 mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -42,12 +42,26 @@ export default function Marketing() {
         </motion.h1>
 
         <motion.p
-          className="text-lg max-w-2xl mx-auto text-center text-gray-700 mb-12"
+          className="text-lg max-w-2xl mx-auto text-gray-700 mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
           Boost your visual identity, captivate your audience, and elevate your online presence.
         </motion.p>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          <a
+            href="/contact"
+            className="inline-block mb-20 px-8 py-4 text-white bg-orange-500 rounded-full shadow hover:bg-orange-600 transition text-lg"
+          >
+            Start Your Digital Design Journey →
+          </a>
+        </motion.div>
 
         <div className="relative border-l-4 border-orange-300 ml-6 md:ml-0 md:border-none">
           {items.map((item, index) => (
@@ -56,6 +70,7 @@ export default function Marketing() {
               className="
                 relative flex flex-col md:flex-row items-start md:items-center gap-6 mb-16 pl-4
                 md:even:flex-row-reverse hover:scale-105 transform transition duration-300
+                border border-orange-200 rounded-2xl bg-white p-8 shadow-sm hover:shadow-lg
               "
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -91,14 +106,27 @@ export default function Marketing() {
           ))}
         </div>
 
-        <div className="text-center mt-16">
+        {/* CTA SECTION */}
+        <motion.section
+          className="mt-24 text-center"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl font-bold mb-4 text-orange-500">
+            Want to see more?
+          </h2>
+          <p className="mb-6 text-lg max-w-xl mx-auto">
+            Request a free quote for website design, development, and hosting today!
+          </p>
           <a
             href="/contact"
-            className="inline-block px-6 py-3 text-white bg-orange-500 rounded-full shadow hover:bg-orange-600 transition duration-300"
+            className="inline-block px-8 py-4 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition duration-300 shadow-md hover:shadow-lg"
           >
-            Let's Grow Your Digital Presence →
+            Let's Create Digital Design That Sticks →
           </a>
-        </div>
+        </motion.section>
       </section>
     </main>
   );

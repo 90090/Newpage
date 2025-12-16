@@ -62,6 +62,19 @@ export default function SEO() {
         >
           Grow your traffic and rank higher with strategies built for long-term success.
         </motion.p>
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          <a
+            href="/contact"
+            className="inline-block mb-20 mt-8 px-8 py-4 text-white bg-orange-500 rounded-full shadow hover:bg-orange-600 transition text-lg"
+          >
+            Let's Optimize Your SEO Today →
+          </a>
+        </motion.div>
       </section>
 
       {/* Features Section */}
@@ -140,21 +153,27 @@ export default function SEO() {
         </motion.div>
       </section>
 
-      {/* CTA */}
-      <section className="text-center py-24 bg-orange-500 text-white">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      {/* CTA SECTION */}
+      <motion.section
+        className="mt-24 mb-24 text-center"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-3xl font-bold mb-4 text-orange-500">
           Ready to Dominate Search?
         </h2>
-        <p className="text-lg max-w-xl mx-auto mb-8">
+        <p className="mb-6 text-lg max-w-xl mx-auto">
           Let us drive the right traffic to your site. Get in touch and let’s make SEO work for you.
         </p>
         <a
           href="/contact"
-          className="inline-block px-8 py-4 bg-white text-orange-500 font-semibold rounded-full shadow hover:bg-orange-100 transition-transform duration-300 hover:scale-105"
+          className="inline-block px-8 py-4 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition duration-300 shadow-md hover:shadow-lg"
         >
-          Let’s Talk SEO →
+          Let's Work Together →
         </a>
-      </section>
+      </motion.section>
     </main>
   );
 }

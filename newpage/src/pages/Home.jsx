@@ -19,7 +19,7 @@ function Home() {
     {
       title: "Responsive Websites",
       text: "We analyze your business and utilize cutting-edge design to ensure your website works seamlessly across every screen size.",
-      image: "/Images/Home/NP_ComputerandPhone.png",
+      image: "/Images/Home/NP_ComputerandPhonewWebsite.png",
     },
     {
       title: "Consistent Hosting",
@@ -98,7 +98,7 @@ function Home() {
           >
             <div className="relative">
               <img
-                src="/Images/Home/NP_ComputerandPhone.png"
+                src="/Images/Home/NP_ComputerandPhonewWebsite.png"
                 alt="Our Work Example"
                 className="rounded-2xl max-w-md"
               />
@@ -162,12 +162,7 @@ function Home() {
           <Cloud className="w-10 h-10 text-white" />
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-3">What We Offer</h2>
-        {/* <p className="max-w-2xl mx-auto text-base md:text-lg leading-relaxed text-gray-200">
-          From responsive websites to strong branding and marketing —{" "}
-          <span className="text-orange-400 font-semibold">Newpage</span> delivers
-          complete digital solutions designed to grow your business.
-        </p> */}
+        <h2 className="text-4xl md:text-5xl font-bold mb-3">What We Offer</h2>
       </div>
         <FeaturesSection featureData={featureData} />
       </section>

@@ -46,7 +46,7 @@ export default function OurProcessSection() {
   const [activeStep, setActiveStep] = useState(null);
 
   const Arrow = () => (
-    <div className="hidden lg:flex items-center justify-center mx-6">
+    <div className="hidden lg:flex items-center justify-center mx-4">
       <MdOutlineKeyboardDoubleArrowRight className="text-orange-500 w-12 h-12" />
     </div>
   );
@@ -91,7 +91,7 @@ export default function OurProcessSection() {
                   />
                   <HiOutlineInformationCircle className="absolute bottom-0 right-0 text-white/90 w-6 h-6" />
                 </motion.button>
-                <p className="mt-4 font-semibold text-white text-md">
+                <p className="mt-4 w-37 font-semibold text-white text-xl">
                   {step.label}
                 </p>
               </div>

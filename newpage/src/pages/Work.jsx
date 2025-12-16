@@ -55,47 +55,50 @@ export default function Work() {
         <p className="text-lg max-w-2xl mx-auto mb-6">
           Explore our recent work and see how we bring brands to life online. We create bold, innovative websites that make an impact. Contact us today to share your ideas!
         </p>
+        <a
+          href="/contact"
+          className="inline-block px-8 py-4 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition duration-300 shadow-md hover:shadow-lg"
+        >
+          Request a Quote Today →
+        </a>
       </motion.section>
 
       {/* PROJECT CARDS */}
-{/* PROJECT CARDS */}
-<section className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
-  {projects.map((project, index) => (
-    <motion.a
-      key={index}
-      href={project.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="relative group cursor-pointer overflow-visible transition-transform hover:scale-105"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-    >
-      {/* Monitor frame */}
-      <div className="relative w-full h-64 md:h-72">
-        <img
-          src="/Images/Work/NP_OurWorkLaptopFrame.png" // your monitor frame image
-          alt="Monitor Frame"
-          className="w-full h-full object-contain relative z-10"
-        />
-        {/* Website inside monitor */}
-        <img
-          src={project.image}
-          alt={project.title}
-          className="absolute top-[5%] left-[13%] right-[13%] w-[75%] h-[75%] object-contain rounded-md z-0"
-        />
-      </div>
+      <section className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+        {projects.map((project, index) => (
+          <motion.a
+            key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group cursor-pointer overflow-visible transition-transform hover:scale-105"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+            {/* Monitor frame */}
+            <div className="relative w-full h-64 md:h-72">
+              <img
+                src="/Images/Work/NP_OurWorkLaptopFrame.png" // your monitor frame image
+                alt="Monitor Frame"
+                className="w-full h-full object-contain relative z-10"
+              />
+              {/* Website inside monitor */}
+              <img
+                src={project.image}
+                alt={project.title}
+                className="absolute top-[5%] left-[13%] right-[13%] w-[75%] h-[75%] object-contain rounded-md z-0"
+              />
+            </div>
 
-      {/* Title overlay */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-center bg-orange-500 text-white font-bold text-md w-60 px-2 py-2 rounded-full shadow-lg z-20">
-        {project.title}
-      </div>
-    </motion.a>
-  ))}
-</section>
-
-
+            {/* Title overlay */}
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-center bg-orange-500 text-white font-bold text-md w-60 px-2 py-2 rounded-full shadow-lg z-20">
+              {project.title}
+            </div>
+          </motion.a>
+        ))}
+      </section>
 
       {/* CTA SECTION */}
       <motion.section

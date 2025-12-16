@@ -22,8 +22,8 @@ export default function FeaturesSection({ featureData }) {
               <div className="p-3 bg-gradient-to-tr from-orange-400 to-[#0096ff] rounded-full mb-4 shadow-md">
                 <Cloud className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-bold text-2xl mb-2 text-black">{feature.title}</h3>
-              <p className="text-black">{feature.text}</p>
+              <h3 className="font-bold text-2xl mb-2 text-white">{feature.title}</h3>
+              <p className="text-white">{feature.text}</p>
             </motion.div>
 
             {/* Image */}

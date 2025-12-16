@@ -13,12 +13,12 @@ export default function Hosting() {
       desc: "Modern, scalable cloud infrastructure optimized for speed and uptime. Powered by next-gen data centers and managed entirely for us.",
       visual: (
         <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-full blur-3xl opacity-40"
+          className="absolute inset-0 bg-gradient-to-tr from-orange-400 to-[#0096ff] rounded-full blur-3xl opacity-40"
           animate={{ scale: [1, 1.3, 1] }}
           transition={{ duration: 6, repeat: Infinity }}
         />
       ),
-      bg: "from-blue-500/20 via-purple-500/10 to-pink-500/20",
+      bg: "from-orange-400 to-[#0096ff]",
     },
     {
       title: "Secure & Reliable",
@@ -77,7 +77,7 @@ export default function Hosting() {
   return (
     <main className="relative bg-gradient-to-br from-orange-200 via-white to-orange-300 overflow-hidden">
       <motion.div
-        className="absolute inset-0 bg-[radial-gradient(circle_at_30%_10%,rgba(255,165,0,0.1),transparent_70%)]"
+        className="relative inset-0 bg-[radial-gradient(circle_at_30%_10%,rgba(255,165,0,0.1),transparent_70%)]"
         style={{ y }}
       />
 
@@ -101,22 +101,28 @@ export default function Hosting() {
           Every website we host runs on secure, high-speed cloud infrastructure designed for performance, reliability, and seamless management.
         </motion.p>
 
-        <motion.a
-          href="/contact"
-          className="px-8 py-3 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition shadow-md"
-          whileHover={{ scale: 1.05 }}
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
         >
-          Contact Us →
-        </motion.a>
+          <a
+            href="/contact"
+            className="inline-block mb-20 px-8 py-4 text-white bg-orange-500 rounded-full shadow hover:bg-orange-600 transition text-lg"
+          >
+            Let Us Handle Your Hosting →
+          </a>
+        </motion.div>
       </section>
 
       
         {/* CLOUD DISPLAY */}
-        <section className="relative flex flex-col items-center justify-center py-10 md:py-100 overflow-hidden">
+        <section className="relative flex flex-col items-center justify-center py-10 md:py-110 overflow-hidden">
           {/* Center Icon */}
           <motion.div className="relative z-20 mb-10 md:mb-0">
             <motion.img
-              src="/Images/Home/NP_CloudGraphic2.png"
+              src="/Images/Hosting/NP_JustCloudGraphic.png"
               alt="Hosting Center"
               className="w-52 object-contain drop-shadow-lg"
               initial={{ scale: 0, opacity: 0 }}
@@ -165,7 +171,7 @@ export default function Hosting() {
                         />
 
                         {/* Icon bubble */}
-                        <div className="p-3 bg-gradient-to-tr from-orange-500 to-pink-500 rounded-full mb-2 shadow-lg">
+                        <div className="p-3 bg-gradient-to-tr from-orange-400 to-[#0096ff] rounded-full mb-2 shadow-lg">
                           {f.icon}
                         </div>
 
@@ -210,7 +216,7 @@ export default function Hosting() {
                 />
 
                 {/* Icon */}
-                <div className="p-3 bg-gradient-to-tr from-orange-500 to-pink-500 rounded-full shadow-lg mb-3">
+                <div className="p-3 bg-gradient-to-tr from-orange-400 to-[#0096ff] rounded-full shadow-lg mb-3">
                   {f.icon}
                 </div>
 
@@ -221,22 +227,25 @@ export default function Hosting() {
             ))}
           </div>
         </section>
-      {/* FINAL CTA */}
+      {/* CTA SECTION */}
       <motion.section
-        className="bg-orange-500 text-white text-center py-10"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        className="mt-24 mb-24 text-center"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
       >
-        <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
-        <p className="max-w-xl mx-auto mb-10">
+        <h2 className="text-3xl font-bold mb-4 text-orange-500">
+          Ready to Get Started?
+        </h2>
+        <p className="mb-6 text-lg max-w-xl mx-auto">
           Let us handle your hosting — we’ll keep your website fast, secure, and worry-free.
         </p>
         <a
           href="/contact"
-          className="inline-block px-8 py-3 bg-white text-orange-500 rounded-full font-semibold hover:bg-orange-100 transition"
+          className="inline-block px-8 py-4 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition duration-300 shadow-md hover:shadow-lg"
         >
-          Contact Us →
+          Let's Work Together →
         </a>
       </motion.section>
     </main>
