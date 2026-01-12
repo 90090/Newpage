@@ -41,10 +41,7 @@ function Home() {
   return (
     <main className="bg-white text-black">
       <section className="relative overflow-hidden bg-white">
-        {/*bg-gradient-to-br from-orange-200 via-white to-orange-300}
-        {/* Background accent for depth */}
-        {/*<div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,165,0,0.1),transparent_60%)] pointer-events-none -z-10"></div>*/}
-
+        
         {/* HERO SECTION */}
         <div className="p-6 text-left flex flex-col md:flex-row items-center justify-center relative z-10">
           <motion.div
@@ -93,7 +90,7 @@ function Home() {
                 className="height-auto"
               />
               {/* Subtle orange glow behind image */}
-              <div className="absolute inset-0 bg-orange-200/30 blur-2xl rounded-2xl -z-10"></div>
+              <div className="absolute inset-0 rounded-2xl -z-10"></div>
             </div>
           </motion.div>
         </div>
