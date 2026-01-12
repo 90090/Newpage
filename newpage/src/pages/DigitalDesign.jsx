@@ -6,27 +6,27 @@ export default function Marketing() {
     {
       title: "Graphic Design",
       text: "We create any design to help your business stand out. Whether it is a small icon, picture, or even animation.",
-      icon: "/icons/graphic.png",
+      icon: "Images/Branding/NP_GraphicDesign.png",
     },
     {
       title: "Logo Design",
       text: "If you’re a new business, haven’t tried creating a logo, or want a revamp — we can create a logo that can be utilized seamlessly across media.",
-      icon: "/icons/logo.png",
+      icon: "Images/Branding/NP_colorpallette.png",
     },
     {
       title: "Advertisements",
       text: "If interested, you can work with our team to develop multi use graphics that can be utilized for advertisements. We can thne host them through google ads to generate traffic to your business.",
-      icon: "/icons/ads.png",
+      icon: "Images/SEO/NP_mobileseo.png",
     },
     {
       title: "Copywriting",
       text: "We ensure that the text on your website not only captures strong SEO, but can be digested by your audience. We utilize the optimum amount of text to capture attention, create conversions, and keep your web page looking its best.",
-      icon: "/icons/copy.png",
+      icon: "Images/SEO/NP_magnifyingglass.png",
     },
     {
       title: "Website Design",
       text: "Your website doesn’t have to be built statically. We bring in alluring curves and shapes to break up the monotony, by generating cutting edge ideas to give you and your customers a user experience unlike any other.",
-      icon: "/icons/web.png",
+      icon: "Images/SEO/NP_MouseClicker.png",
     },
   ];
 
@@ -64,47 +64,49 @@ export default function Marketing() {
         </motion.div>
 
         <div className="relative border-l-4 border-orange-300 ml-6 md:ml-0 md:border-none">
-          {items.map((item, index) => (
-            <motion.div
-              key={index}
-              className="
-                relative flex flex-col md:flex-row items-start md:items-center gap-6 mb-16 pl-4
-                md:even:flex-row-reverse hover:scale-105 transform transition duration-300
-                border border-orange-200 rounded-2xl bg-white p-8 shadow-sm hover:shadow-lg
-              "
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              {/* Timeline line connector for mobile */}
-              <div className="absolute -left-[10px] w-4 h-4 rounded-full bg-orange-500 md:hidden"></div>
+        {items.map((item, index) => (
+          <motion.div
+            key={index}
+            className="
+              relative flex flex-col md:flex-row items-center md:items-start
+              gap-6 mb-16 pl-4
+              hover:scale-105 transform transition duration-300
+              border border-orange-200 rounded-2xl bg-white p-8 shadow-sm hover:shadow-lg
+            "
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            {/* Timeline dot (mobile only) */}
+            <div className="absolute -left-[10px] w-4 h-4 rounded-full bg-orange-500 md:hidden"></div>
 
-              {/* Icon */}
-              <div className="relative flex justify-center items-center">
-                <div className="absolute inset-0 rounded-full bg-orange-300 blur-xl opacity-40 animate-pulse"></div>
+            {/* Icon */}
+            <div className="relative flex justify-center md:justify-start items-center w-full md:w-auto">
+              <div className="absolute inset-0 rounded-full bg-orange-300 blur-xl opacity-40 animate-pulse"></div>
 
-                <div className="rounded-full p-[4px] bg-gradient-to-br from-orange-400 to-red-500">
-                  <div className="w-24 h-24 rounded-full overflow-hidden bg-white shadow-lg transform transition duration-300 hover:scale-110">
-                    <img
-                      src={item.icon}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+              <div className="rounded-full p-[4px] bg-gradient-to-br from-orange-400 to-red-500">
+                <div className="w-24 h-24 rounded-full overflow-hidden bg-white shadow-lg transform transition duration-300 hover:scale-110">
+                  <img
+                    src={item.icon}
+                    alt={item.title}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
+            </div>
 
-              {/* Text block */}
-              <div className="md:w-1/2">
-                <h2 className="text-2xl font-semibold text-orange-500 mb-2">
-                  {item.title}
-                </h2>
-                <p className="text-gray-700">{item.text}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+            {/* Text */}
+            <div className="md:w-1/2 text-center md:text-left">
+              <h2 className="text-2xl font-semibold text-orange-500 mb-2">
+                {item.title}
+              </h2>
+              <p className="text-gray-700">{item.text}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
 
         {/* CTA SECTION */}
         <motion.section

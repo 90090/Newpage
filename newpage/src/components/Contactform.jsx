@@ -12,8 +12,8 @@ export default function ContactForm() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(null);
 
-  const API_URL = "https://uf1n52e194.execute-api.us-east-1.amazonaws.com/contact";
-  const API_KEY = "H7to292z3yzsjFCt3LJEA516Gij3C7n";
+  const API_URL = "https://ksnv48d4u4.execute-api.us-east-1.amazonaws.com/contact";
+  const API_KEY = "bP12GyiPzjyfziE9X5FYCFpYR4WXZzUl";
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;

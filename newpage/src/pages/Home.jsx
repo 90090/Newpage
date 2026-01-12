@@ -40,30 +40,13 @@ function Home() {
 
   return (
     <main className="bg-white text-black">
-      <section className="relative overflow-hidden bg-gradient-to-br from-orange-200 via-white to-orange-300">
+      <section className="relative overflow-hidden bg-white">
+        {/*bg-gradient-to-br from-orange-200 via-white to-orange-300}
         {/* Background accent for depth */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,165,0,0.1),transparent_60%)] pointer-events-none -z-10"></div>
-
-        {/* HEADER / LOGO */}
-        <motion.div
-          className="text-center pt-8"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          <h1 className="text-3xl md:text-4xl font-extrabold text-orange-500 tracking-tight">
-            Welcome to 
-          </h1> 
-          <img
-            src="/NewPageLogo.png"
-            alt="Newpage Logo"
-            className="mx-auto w-40 md:w-52 mb-3 drop-shadow-md"
-          />
-          
-        </motion.div>
+        {/*<div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,165,0,0.1),transparent_60%)] pointer-events-none -z-10"></div>*/}
 
         {/* HERO SECTION */}
-        <div className="md:p-13 p-8 text-center flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
+        <div className="p-6 text-left flex flex-col md:flex-row items-center justify-center relative z-10">
           <motion.div
             className="flex-1 max-w"
             initial={{ opacity: 0, y: 20 }}
@@ -71,7 +54,7 @@ function Home() {
             transition={{ duration: 0.8 }}
           >
             <motion.h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900 leading-tight">
-              A Web Design & Development Company
+              Grow Your Digital Presence
             </motion.h2>
             <motion.p className="text-lg text-gray-700 mb-6 leading-relaxed">
               New to having a digital presence? Not sure how to host a website?
@@ -80,6 +63,13 @@ function Home() {
               powerful web design. Whether you're a new business or an established
               one, we want to see you succeed.
             </motion.p>
+
+            <a
+              href="/contact"
+              className="inline-block mr-5 px-6 py-3 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition duration-300 shadow-md hover:shadow-lg"
+            >
+              Request a Free Quote
+            </a>
 
             <a
               href="/work"
@@ -100,7 +90,7 @@ function Home() {
               <img
                 src="/Images/Home/NP_ComputerandPhonewWebsite.png"
                 alt="Our Work Example"
-                className="rounded-2xl max-w-md"
+                className="height-auto"
               />
               {/* Subtle orange glow behind image */}
               <div className="absolute inset-0 bg-orange-200/30 blur-2xl rounded-2xl -z-10"></div>
@@ -112,47 +102,67 @@ function Home() {
 
 
       {/* WHY US SECTION */}
+      <div className="relative overflow-hidden">
+        <svg
+          className="absolute top-0 left-0 w-full"
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,80 Q720,0 1440,80 L1440,0 L0,0 Z"
+            fill="white"
+          />
+        </svg>
       <motion.section
-        className="bg-orange-500 text-white py-12 px-6 md:px-16 text-center md:text-left"
+        className="bg-orange-100 text-white py-20 px-6 md:px-16 text-center md:text-left"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-10">
+        
+        <div className="flex flex-col md:flex-row items-center justify-left md:justify-between gap-10">
           {/* TEXT CONTENT */}
           <div className="md:w-1/2">
-            <h2 className="text-3xl text-center font-bold mb-4">
-              CT Website Design and Hosting
+            <h2 className="text-3xl text-left font-bold mb-4 text-black">
+              Website Design and Hosting
             </h2>
-            <p className="text-base md:text-lg text-center leading-relaxed">
+            <p className="text-black text-base md:text-lg text-left leading-relaxed">
               Looking for professional web design in CT? We build fast,
               mobile-friendly websites for small businesses across Connecticut.
               Whether you're in Hartford, New Haven, Stamford, Bridgeport, or even
-              outside Connecticut, we're ready to work with you — wherever you're
-              located.
+              outside Connecticut, we're ready to work with you — <span className="font-semibold">wherever you're
+              located.</span>
             </p>
           </div>
 
-          {/* IMAGE */}
-          <div className="md:w-1/2 flex justify-center">
-            <img
-              src="/Images/Home/NP_CT Graphic.png"
-              alt="Connecticut map showing our locations"
-              className="w-64 sm:w-80 md:w-112 rounded-lg"
-            />
-          </div>
-        </div>
+          {/* IMAGE + BRANDING */}
+      <div className="md:w-1/2 flex flex-col items-center text-black">
+        <p className="font-semibold tracking-wide text-md mb-2">
+          Welcome to
+        </p>
 
-        {/* BUTTON */}
-        <div className="mt-10 flex justify-center">
-          <a
-            href="/contact"
-            className="inline-block px-6 py-3 rounded-full bg-white text-orange-500 font-semibold hover:bg-orange-100 transition duration-300 shadow-md hover:shadow-lg"
-          >
-            Request a Free Quote
-          </a>
+        {/* LOGO */}
+        <img
+          src="/NewPageLogo.png"
+          alt="Newpage logo"
+          className="w-40 md:w-50"
+        />
+
+        {/* MAIN IMAGE */}
+        <img
+          src="/Images/Home/NP_CT Graphic.png"
+          alt="Connecticut map showing our locations"
+          className="max-w-full height-auto rounded-lg brightness-0"
+        />
+
+        {/* CAPTION */}
+        <p className="font-semibold mt-2 text-md self-end">
+          a Connecticut-based company
+        </p>
+      </div>
         </div>
       </motion.section>
+      </div>
 
 
       {/* FEATURES SECTION */}
