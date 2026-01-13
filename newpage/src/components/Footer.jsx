@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#1f1f1f] text-white py-12 px-8 overflow-hidden">
+    <footer className="relative bg-[#1f1f1f] text-white py-8 px-6 overflow-hidden">
       {/* Gradient Accent Glow */}
       <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 via-gray-500/10 to-transparent pointer-events-none"></div>
 
-      <div className="relative max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+      <div className="relative max-w-7xl flex flex-col md:flex-row justify-between items-center gap-10">
         {/* LEFT: Brand and tagline */}
         <div className="text-center md:text-left max-w-md">
           <h1 className="text-xl md:text-2xl font-semibold mb-2">

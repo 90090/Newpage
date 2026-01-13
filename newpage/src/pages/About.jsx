@@ -23,9 +23,9 @@ export default function About() {
         </motion.div>
       </section>
       {/* Who We Are */}
-      <section className="max-w-4xl mx-auto mb-24 text-center px-4 sm:px-6 ">
+      <section className="max-w-4xl mx-auto mb-24 px-4 sm:px-6">
         <motion.h1
-          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 pt-5 leading-tight"
+          className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-6 pt-5 leading-tight"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -34,7 +34,7 @@ export default function About() {
         </motion.h1>
 
         <motion.p
-          className="text-base sm:text-lg leading-relaxed sm:leading-loose text-black"
+          className="text-base sm:text-lg leading-relaxed sm:leading-loose text-black text-left"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}

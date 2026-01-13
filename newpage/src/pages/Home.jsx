@@ -70,7 +70,7 @@ function Home() {
 
             <a
               href="/work"
-              className="inline-block mt-4 px-8 py-3 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition duration-300 shadow-md hover:shadow-lg"
+              className="inline-block mr-5 font-semibold px-6 py-3 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition duration-300 shadow-md hover:shadow-lg"
             >
               View Our Work
             </a>
@@ -111,7 +111,7 @@ function Home() {
           />
         </svg>
       <motion.section
-        className="bg-orange-100 text-white py-20 px-6 md:px-16 text-center md:text-left"
+        className="bg-orange-100 text-white py-20 px-6 text-center md:text-left"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
