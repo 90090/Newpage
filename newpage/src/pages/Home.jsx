@@ -70,7 +70,7 @@ function Home() {
 
             <a
               href="/work"
-              className="inline-block mr-5 font-semibold px-6 py-3 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition duration-300 shadow-md hover:shadow-lg"
+              className="inline-block mr-5 mt-3 font-semibold px-6 py-3 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition duration-300 shadow-md hover:shadow-lg"
             >
               View Our Work
             </a>

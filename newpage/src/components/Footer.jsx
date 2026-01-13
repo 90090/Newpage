@@ -6,9 +6,9 @@ const Footer = () => {
       {/* Gradient Accent Glow */}
       <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 via-gray-500/10 to-transparent pointer-events-none"></div>
 
-      <div className="relative max-w-7xl flex flex-col md:flex-row justify-between items-center gap-10">
+      <div className="relative max-w-7xl flex flex-col md:flex-row justify-between items-left gap-10">
         {/* LEFT: Brand and tagline */}
-        <div className="text-center md:text-left max-w-md">
+        <div className="text-left md:text-left max-w-md">
           <h1 className="text-xl md:text-2xl font-semibold mb-2">
             NewPage - Your Digital Growth Partner
           </h1>
